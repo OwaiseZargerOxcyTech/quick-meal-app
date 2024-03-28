@@ -3,8 +3,10 @@ import { CDN_URL } from "@/utils/constants";
 const RestaurantCard = (props) => {
   const { resData } = props;
 
-  const { cloudinaryImageId, name, avgRating, cuisines, areaName } =
-    resData?.info;
+  // const { cloudinaryImageId, name, avgRating, cuisines, areaName } =
+  //   resData?.info;
+
+  const { cloudinaryImageId, name, avgRating, cuisines, areaName } = resData;
 
   return (
     <div className="card w-60 shadow-xl hover:shadow-2xl transition duration-300">

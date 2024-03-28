@@ -9,7 +9,7 @@ const Navbar = () => {
           alt="logo"
           className="w-16 h-16"
         />
-        <a className="btn btn-ghost text-xl">Quick Meal</a>
+        <a className="btn btn-ghost text-xl hidden lg:flex">Quick Meal</a>
       </div>
       <button className="search-icon btn btn-ghost ">
         <svg
