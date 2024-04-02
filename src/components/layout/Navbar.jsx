@@ -1,15 +1,20 @@
+import Link from "next/link";
 import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-base-100 shadow-sm py-0">
+    <div className="navbar container mx-auto bg-base-100 border-b ">
       <div className="flex-1">
-        <img
-          src="https://static.vecteezy.com/system/resources/previews/007/500/121/non_2x/food-delivery-icon-clip-art-logo-simple-illustration-free-vector.jpg"
-          alt="logo"
-          className="w-16 h-16"
-        />
-        <a className="btn btn-ghost text-xl hidden lg:flex">Quick Meal</a>
+        <Link href="/">
+          <div className="flex items-center">
+            <img
+              src="https://static.vecteezy.com/system/resources/previews/007/500/121/non_2x/food-delivery-icon-clip-art-logo-simple-illustration-free-vector.jpg"
+              alt="logo"
+              className="w-16 h-16"
+            />
+            <p className="btn btn-ghost text-xl hidden lg:flex">Quick Meal</p>
+          </div>
+        </Link>
       </div>
       <button className="search-icon btn btn-ghost ">
         <svg
@@ -77,13 +82,10 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-32"
           >
             <li>
-              <a className="justify-between">
-                Profile
-                <span className="badge">New</span>
-              </a>
+              <a className="justify-between">Profile</a>
             </li>
             <li>
               <a>Settings</a>
