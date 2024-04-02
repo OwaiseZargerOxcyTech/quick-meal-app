@@ -10,8 +10,7 @@ export default function RestaurantPage({ params }) {
 
   if (!resInfo) {
     return (
-      <div className="flex gap-4 mt-4">
-        <Shimmer />
+      <div className="flex flex-wrap items-center justify-center gap-4 mt-4 ">
         <Shimmer />
         <Shimmer />
         <Shimmer />

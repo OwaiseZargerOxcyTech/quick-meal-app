@@ -25,13 +25,15 @@ const RestaurantList = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center">
-      <h2 className="text-2xl p-2 font-bold">Top Restaurant chains in Pune</h2>
+    <div>
+      <h2 className="text-2xl p-2 my-4 font-bold">
+        Top Restaurant chains in Pune
+      </h2>
       <div className="flex flex-wrap justify-center gap-4">
         {/* -------------------with swiggy api--------------------------------------  */}
 
         {listOfRestaurants.length === 0 ? (
-          <div className="flex gap-4">
+          <div className="flex flex-wrap items-center justify-center gap-4">
             <Shimmer />
             <Shimmer />
             <Shimmer />
